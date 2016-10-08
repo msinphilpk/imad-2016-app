@@ -28,3 +28,17 @@ counter.onclick = function(){
     request.open('GET','http://msinphilpk.imad.hasura-app.io/counter',true);
     request.send(null);
 };
+
+
+var nameIn = document.getElementById('name');
+var name = nameIn.value;
+var submit = document.getElementById('sub_btn');
+submit.onclick = function(){
+  var names = ['name1','name2','name3'];  
+  var list = '';
+  for(i=0;i<names.legth;i++){
+      list += '<li>' + names[i] + '</li>';
+  }
+  var ul = document.getElementById('list');
+  ul.innerHTML = list;
+};
