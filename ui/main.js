@@ -13,7 +13,7 @@ img.onclick = function(){
 
 
 var button = document.getElementById('counter');
-var counter;
+var counter = 0;
 counter.onclick = function(){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function(){
