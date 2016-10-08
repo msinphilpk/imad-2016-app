@@ -30,8 +30,7 @@ counter.onclick = function(){
 };
 
 
-var nameIn = document.getElementById('name');
-var name = nameIn.value;
+
 var submit = document.getElementById('sub_btn');
 submit.onclick = function(){
     var request = new XMLHttpRequest();
@@ -48,6 +47,8 @@ submit.onclick = function(){
             }
         }
     };
+    var nameIn = document.getElementById('name');
+    var name = nameIn.value;
     request.open('GET','http://msinphilpk.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
 };
