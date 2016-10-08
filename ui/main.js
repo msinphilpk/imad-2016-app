@@ -24,7 +24,7 @@ counter.onclick = function(){
                 span.innerHTML = counter.toString(); 
             }
         }
-    }
+    };
     request.open('GET','http://msinphilpk.imad.hasura-app.io/counter',true);
     request.send(null);
 };
@@ -47,7 +47,7 @@ submit.onclick = function(){
                 ul.innerHTML = list;
             }
         }
-    }
+    };
     request.open('GET','http://msinphilpk.imad.hasura-app.io/submit-name?name=' + name,true);
     request.send(null);
 };
