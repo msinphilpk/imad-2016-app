@@ -37,7 +37,7 @@ submit.onclick = function(){
     request.onreadystatechange = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             if(request.state === 200){
-                var names = ['name1','name2','name3'];  
+                var names = request.responseText;  
                 var list = '';
                 for(i=0;i<names.legth;i++){
                     list += '<li>' + names[i] + '</li>';
